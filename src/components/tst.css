@@ -1,0 +1,126 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.title{
+
+    font-size: 3.5em;
+    text-align: center;
+}
+
+body {
+font-family: 'Arial', sans-serif;
+background-color: #f4f4f4;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+margin: 0;
+
+}
+.game-container {
+text-align: center;
+background-color: #fff;
+border-radius: 8px;
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+padding: 20px;
+
+}
+/* Board Styles */
+#board {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 10px;
+margin-bottom: 20px;
+
+}
+/* Square Styles */
+.square {
+width: 100px;
+height: 100px;
+background-color: #008cba;
+color: white;
+font-size: 24px;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 6px;
+cursor: pointer;
+transition: background-color 0.3s;
+}
+.square:hover {
+background-color: #005f75;
+}
+
+.message {
+font-size: 20px;
+margin: 10px 0;
+color: #333;
+}
+/* Score Styles */
+.score {
+font-size: 18px;
+color: #555;
+}
+
+.restart-button {
+    margin-top: 10px;
+background-color: #4CAF50;
+color: white;
+font-size: 16px;
+padding: 10px 20px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+transition: background-color 0.3s;
+}
+.restart-button:hover {
+background-color:#45a049  ; /* Darker red on hover */
+transform: scale(1.05);
+}
+
+.refresh-button {
+    margin-top: 10px;
+    margin-left: 10px;
+    background-color:#f44336; /* Green background */
+    color: white; /* White text */
+    font-size: 16px; /* Font size */
+    padding: 10px 20px; /* Padding */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transition for background color and transform */
+   
+}
+
+.refresh-button:hover {
+    background-color:#c62828; /* Darker green on hover */
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+
+
+
+
+
+/* Responsive Design */
+@media (max-width: 600px) {
+.square {
+width: 80px;
+height: 80px;
+font-size: 20px;
+}
+.message {
+font-size: 18px;
+}
+.score {
+font-size: 16px;
+}
+.restart-button {
+font-size: 14px;
+padding: 8px 16px;
+}
+}
